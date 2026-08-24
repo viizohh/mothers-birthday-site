@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles - Happy Birthday Mom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="circles-page">
+    <a href="index.html" class="home-link">home</a>
+    <a href="circles.html" class="gallery-link">circles</a>
+    <a href="card.html" class="card-link">card</a>
+
+    <!-- Lock icons for hidden presents -->
+    <div class="lock-icon lock-1" id="lock1">🔒</div>
+    <div class="lock-icon lock-2" id="lock2">🔒</div>
+    <div class="lock-icon lock-3" id="lock3">🔒</div>
+    <div class="lock-icon lock-4" id="lock4">🔒</div>
+    <div class="lock-icon lock-5" id="lock5">🔒</div>
+
+    <div class="container">
+        <h1 id="birthday-text">happy birthday mom</h1>
+
+        <div class="rolodex-wrapper">
+            <div class="rolodex-container" id="rolodex">
+                <div class="rolodex-card" data-index="1">
+                    <img src="images/photo-01.jpg" alt="Christmas Tree">
+                </div>
+                <div class="rolodex-card" data-index="2">
+                    <img src="images/photo-02.jpg" alt="Fury">
+                </div>
+                <div class="rolodex-card" data-index="3">
+                    <img src="images/photo-03.jpg" alt="Summer Time">
+                </div>
+                <div class="rolodex-card" data-index="4">
+                    <img src="images/photo-04.jpg" alt="Dad and Mom">
+                </div>
+                <div class="rolodex-card" data-index="5">
+                    <img src="images/photo-05.jpg" alt="Money Spread">
+                </div>
+                <div class="rolodex-card" data-index="6">
+                    <img src="images/photo-06.jpg" alt="Settings Walk">
+                </div>
+                <div class="rolodex-card" data-index="7">
+                    <img src="images/photo-07.jpg" alt="Graduation">
+                </div>
+                <div class="rolodex-card" data-index="8">
+                    <img src="images/photo-08.jpg" alt="Nature Pose">
+                </div>
+                <div class="rolodex-card" data-index="9">
+                    <img src="images/photo-09.jpg" alt="Navy Hoodie">
+                </div>
+                <div class="rolodex-card" data-index="10">
+                    <img src="images/photo-10.jpg" alt="Little Islands">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="quizQuestion"></h2>
+            <div id="quizOptions"></div>
+            <p id="quizResult"></p>
+        </div>
+    </div>
+
+    <!-- Unlock Modal -->
+    <div id="unlockModal" class="modal">
+        <div class="modal-content">
+            <span class="close-unlock">&times;</span>
+            <h2 id="unlockHeader">Present Unlocked!</h2>
+            <p id="unlockMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
